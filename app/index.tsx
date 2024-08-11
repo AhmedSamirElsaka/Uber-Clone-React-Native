@@ -1,15 +1,14 @@
 import { Text, View } from "react-native";
+import { Provider } from "react-redux";
+import { Store } from "../store";
+import HomeScreen from "@/screens/HomeScreen";
 
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-    </View>
+    <Provider store={Store}>
+      <View>
+        <HomeScreen />
+      </View>
+    </Provider>
   );
 }
