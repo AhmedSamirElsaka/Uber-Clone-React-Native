@@ -1,7 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  origin: null,
+  origin: {
+    location: {
+      lat: 31.25654,
+      lng: 32.28411,
+    },
+    describtion: "Port Said, Egypt",
+  },
   destination: null,
   travelTimeInformation: null,
 };
