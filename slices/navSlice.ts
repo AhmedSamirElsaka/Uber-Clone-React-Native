@@ -8,7 +8,13 @@ const initialState = {
     },
     describtion: "Port Said, Egypt",
   },
-  destination: null,
+  destination: {
+    location: {
+      lat: 30.033333,
+      lng: 31.233334,
+    },
+    describtion: "Port Said, Egypt",
+  },
   travelTimeInformation: null,
 };
 
